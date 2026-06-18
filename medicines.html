@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="medicine-management">
+        <h2>💊 Medicine Management</h2>
+
+        <div class="medicine-count">
+            Total Medicines: <span id="medicineCount">0</span>
+        </div>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchMedicine" placeholder="Search Medicine">
+            <button onclick="performSearch()">Search</button>
+        <form id="medicineForm">
+            <input type="text" id="medicineName" placeholder="Medicine Name" required>
+            <input type="text" id="companyName" placeholder="Company Name" required>
+            <input type="number" id="medicinePrice" placeholder="Price" required>
+
+            <button type="submit">Add Medicine</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Medicine</th>
+                    <th>Company</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="medicineTable">
+            </tbody>
+        </table>
+    </section>
+
+    <script src="medicines.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MediRep Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<section class="header">
+
+    <div class="top-bar">
+
+        <i class="fa-solid fa-bars menu-icon"></i>
+
+        <div class="right-icons">
+
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+                <span>3</span>
+            </div>
+
+            <img src="https://i.pravatar.cc/100"
+            alt="profile"
+            class="profile-pic">
+
+        </div>
+
+    </div>
+
+    <div class="welcome">
+
+        <h1>Good Morning, kanhaiya👋</h1>
+
+        <p>Have a productive day!</p>
+
+        <p class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            darbhanga, Bihar
+        </p>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+    <div class="stat-card blue">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        <h2>25</h2>
+
+        <p>Doctors Visited</p>
+
+    </div>
+    <a href="medicines.html" class="card-link">
+
+<div class="stat-card green">
+
+    <i class="fa-solid fa-capsules"></i>
+
+    <h2 id="medicineCounter">0</h2>
+
+    <p>Medicines Listed</p>
+
+</div>
+
+</a>
+
+    <div class="stat-card orange">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        <h2>8</h2>
+
+        <p>Today's Visits</p>
+
+    </div>
+
+    <div class="stat-card red">
+
+        <i class="fa-solid fa-clipboard-check"></i>
+
+        <h2>8</h2>
+
+        <p>Follow-Ups</p>
+
+    </div>
+
+</section>
+
+<!-- QUICK MENU -->
+
+<section class="quick-menu">
+
+    <div class="menu-card">
+        <i class="fa-solid fa-user-plus"></i>
+        <span>Doctor Visit</span>
+    </div>
+
+    <div class="menu-card">
+        <i class="fa-solid fa-pills"></i>
+        <span>Medicines</span>
+    </div>
+
+    <div class="menu-card">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span>Follow-Ups</span>
+    </div>
+
+    <div class="menu-card">
+        <i class="fa-solid fa-note-sticky"></i>
+        <span>Notes</span>
+    </div>
+
+    <div class="menu-card">
+        <i class="fa-solid fa-chart-pie"></i>
+        <span>Reports</span>
+    </div>
+
+</section>
+
+<!-- SCHEDULE -->
+
+<section class="schedule">
+
+    <div class="section-title">
+
+        <h2>Today's Schedule</h2>
+
+        <a href="#">View All</a>
+
+    </div>
+
+    <div class="visit">
+
+        <div class="time">
+            10:30 AM
+        </div>
+
+        <div class="doctor-info">
+
+            <h3>Dr. Sharma</h3>
+
+            <p>City Hospital, Patna</p>
+
+        </div>
+
+        <span class="completed">
+            Completed
+        </span>
+
+    </div>
+
+    <div class="visit">
+
+        <div class="time">
+            12:00 PM
+        </div>
+
+        <div class="doctor-info">
+
+            <h3>Dr. Singh</h3>
+
+            <p>Life Care Clinic</p>
+
+        </div>
+
+        <span class="completed">
+            Completed
+        </span>
+
+    </div>
+
+    <div class="visit">
+
+        <div class="time">
+            02:00 PM
+        </div>
+
+        <div class="doctor-info">
+
+            <h3>Dr. Khan</h3>
+
+            <p>Health Plus Hospital</p>
+
+        </div>
+
+        <span class="upcoming">
+            Upcoming
+        </span>
+
+    </div>
+
+    <button class="add-visit-btn">
+
+        <i class="fa-solid fa-plus"></i>
+
+        Add New Visit
+
+    </button>
+
+</section>
+<!-- MEDICINES -->
+
+<section class="medicines">
+
+    <div class="section-title">
+
+        <h2>Top Medicines</h2>
+
+        <a href="#">View All</a>
+
+    </div>
+
+    <div class="medicine-card">
+
+        <span>Dolo 650</span>
+
+        <strong>₹35</strong>
+
+    </div>
+
+    <div class="medicine-card">
+
+        <span>Azithromycin 500</span>
+
+        <strong>₹120</strong>
+
+    </div>
+
+    <div class="medicine-card">
+
+        <span>Vitamin C</span>
+
+        <strong>₹80</strong>
+
+    </div>
+
+</section>
+
+<!-- BOTTOM NAV -->
+
+<nav class="bottom-nav">
+
+    <a href="#" class="active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-user-doctor"></i>
+        <span>Doctors</span>
+    </a>
+
+    <a href="#" class="center-btn">
+        <i class="fa-solid fa-plus"></i>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-capsules"></i>
+        <span>Medicines</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-user"></i>
+        <span>Profile</span>
+    </a>
+
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>

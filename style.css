@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    padding-bottom:100px;
+}
+
+/* HEADER */
+
+.header{
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    color:white;
+    padding:20px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu-icon{
+    font-size:24px;
+}
+
+.right-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.notification{
+    position:relative;
+    font-size:20px;
+}
+
+.notification span{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    background:red;
+    color:white;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    font-size:11px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile-pic{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:3px solid white;
+}
+
+.welcome{
+    margin-top:25px;
+}
+
+.welcome h1{
+    font-size:24px;
+}
+
+.location{
+    margin-top:8px;
+    opacity:0.9;
+}
+
+/* STATS */
+
+.stats{
+    padding:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.stat-card{
+    padding:18px;
+    border-radius:20px;
+    color:white;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.stat-card i{
+    font-size:25px;
+    margin-bottom:10px;
+}
+
+.stat-card h2{
+    font-size:28px;
+}
+
+.stat-card p{
+    font-size:13px;
+    margin-top:5px;
+}
+
+.blue{
+    background:#3b82f6;
+}
+
+.green{
+    background:#10b981;
+}
+
+.orange{
+    background:#f59e0b;
+}
+
+.red{
+    background:#ef4444;
+}
+
+/* QUICK MENU */
+
+.quick-menu{
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.menu-card{
+    background:white;
+    border-radius:20px;
+    padding:18px 10px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.menu-card i{
+    font-size:24px;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.menu-card span{
+    display:block;
+    font-size:12px;
+    font-weight:500;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.section-title a{
+    text-decoration:none;
+    color:#2563eb;
+    font-size:14px;
+}
+
+/* SCHEDULE */
+
+.schedule{
+    padding:25px 20px;
+}
+
+.visit{
+    background:white;
+    border-radius:16px;
+    padding:15px;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.time{
+    font-weight:600;
+    color:#2563eb;
+    font-size:14px;
+}
+
+.doctor-info{
+    flex:1;
+    margin-left:15px;
+}
+
+.doctor-info h3{
+    font-size:15px;
+}
+
+.doctor-info p{
+    font-size:12px;
+    color:#777;
+}
+
+.completed{
+    background:#dcfce7;
+    color:#15803d;
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:11px;
+}
+
+.upcoming{
+    background:#dbeafe;
+    color:#1d4ed8;
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:11px;
+}
+
+.add-visit-btn{
+    width:100%;
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    border-radius:15px;
+    margin-top:10px;
+    font-size:15px;
+}
+
+/* MEDICINES */
+
+.medicines{
+    padding:0 20px 20px;
+}
+
+.medicine-card{
+    background:white;
+    border-radius:16px;
+    padding:15px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.medicine-card strong{
+    color:#10b981;
+}
+
+/* BOTTOM NAVIGATION */
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:12px 0;
+    box-shadow:0 -5px 20px rgba(0,0,0,0.1);
+}
+
+.bottom-nav a{
+    text-decoration:none;
+    color:#777;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:12px;
+}
+
+.bottom-nav a i{
+    font-size:20px;
+    margin-bottom:4px;
+}
+
+.bottom-nav .active{
+    color:#2563eb;
+}
+
+.center-btn{
+    background:#2563eb;
+    color:white !important;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:-30px;
+    box-shadow:0 8px 20px rgba(37,99,235,0.4);
+}
+
+.center-btn i{
+    margin:0;
+}
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+    .welcome h1{
+        font-size:22px;
+    }
+
+    .quick-menu{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .stat-card h2{
+        font-size:24px;
+    }
+}
+.card-link{
+    text-decoration:none;
+    color:inherit;
+}
+.medicine-management {
+    padding: 20px;
+}
+
+.medicine-management h2 {
+    margin-bottom: 20px;
+}
+
+.medicine-count {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#searchMedicine {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#medicineForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#medicineForm input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#medicineForm button {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+#medicineForm button:hover {
+    background: #059669;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+/* बटन को स्टाइल करें */
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e4bb5;
+}
+
+/* इनपुट को स्टाइल करें */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* टेबल को स्टाइल करें */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
